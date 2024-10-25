@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.ts",
   "scripts": {
-    "dev": "ts-node src/app.ts",
+    "dev": "ts-node -r dotenv/config src/app.ts",
     "nodemon": "nodemon --exec ts-node -r dotenv/config src/app.ts"
   },
   "keywords": [],

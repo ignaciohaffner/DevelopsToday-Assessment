@@ -8,9 +8,8 @@ const BASE_URL_COUNTRIESNOW = process.env.BASE_URL_COUNTRIESNOW;
 
 export const getAllCountries = async (req: Request, res: Response) => {
   try {
-    const response = await fetch(`${BASE_URL}/AvailableCountries`);
-
-    const data = await response.json();
+    const response = await axios.get(`${BASE_URL}/AvailableCountries`);
+    const data = response.data;
     res.json(data);
   } catch (error) {
     res.status(500).send(error);
