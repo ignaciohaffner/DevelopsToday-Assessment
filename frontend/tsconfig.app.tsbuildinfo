@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/chart.tsx","./src/models/entities/country.ts","./src/models/entities/countryinformation.ts","./src/pages/allcountriespage.tsx","./src/pages/countrypage.tsx","./src/services/countryservice.ts"],"version":"5.6.3"}
