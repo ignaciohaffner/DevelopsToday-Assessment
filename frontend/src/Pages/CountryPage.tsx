@@ -17,7 +17,7 @@ const CountryPage = () => {
         if (!countryCode) return;
         const data: CountryInformation =
           await countryService.getCountryInformation(countryCode);
-        console.log(data);
+
         setCountry(data);
         setLoading(false);
       } catch (error: any) {

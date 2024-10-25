@@ -63,7 +63,6 @@ export const getCountryInformation = async (req: Request, res: Response) => {
 
     res.status(200).json(country);
   } catch (error) {
-    console.error(error);
     res.status(500).json({
       error: true,
       message: "Error fetching country data",
