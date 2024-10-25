@@ -8,7 +8,7 @@ class CountryService {
   getAllCountries = async (): Promise<Country[]> => {
     try {
       const response = await axios.get<Country[]>(
-        `${countryBaseUrl}/allcountries`
+        `${countryBaseUrl}/all-countries`
       );
       return response.data;
     } catch (error: any) {
@@ -21,7 +21,7 @@ class CountryService {
   ): Promise<CountryInformation> => {
     try {
       const response = await axios.get<CountryInformation>(
-        `${countryBaseUrl}/get-country-info/${countryName}`
+        `${countryBaseUrl}/country-info/${countryName}`
       );
       return response.data;
     } catch (error: any) {
